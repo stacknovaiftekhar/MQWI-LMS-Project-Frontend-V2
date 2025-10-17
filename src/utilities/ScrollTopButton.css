@@ -1,0 +1,30 @@
+.scroll-top-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+}
+
+.progress-circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease-in-out;
+}
+
+.arrow {
+  position: relative;
+  color: #D5F5E3;
+  font-size: 20px;
+  font-weight: bold;
+  z-index: 10;
+}

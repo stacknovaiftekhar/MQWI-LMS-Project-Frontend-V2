@@ -1,0 +1,47 @@
+.sadaqah .icon {
+  width: 85px;
+  height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem auto;
+  background: #ABEBC6;
+  border-radius: 15% 0 25% 0;
+  transition: background 0.3s, transform 0.3s;
+}
+.sadaqah .icon i {
+  font-size: 3rem;
+  color: #1D8348;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.sadaqah .icon-sm { width: 70px; height: 70px; }
+.sadaqah .icon-sm i { font-size: 2rem; }
+
+.sadaqah .icon:hover { background: #1D8348; }
+.sadaqah .icon:hover i { color: #D5F5E3; transform: scale(1.1); }
+
+.sadaqah-form .method img { max-width: 130px; }
+.sadaqah-form .method h6 { margin-top: 0.5rem; margin-bottom: 0; }
+
+.text-justify { text-align: justify; text-align-last: center; }
+
+
+/*.....................................
+      Responsive Section Start
+.....................................*/
+/* Large Devices (Desktops or Laptops, 992px to <1200px) */
+@media (max-width: 1199.98px) {
+  .sadaqah .category h4 { font-size: 22px; }
+}
+
+/* Medium Devices (Laptops or Tablets, 768px to <992px) */
+@media (max-width: 991.98px) {
+  .sadaqah .category h4 { font-size: 1.5rem; }
+}
+
+/* Small Devices (Landscape Phones, 576px to <768px) */
+@media (max-width: 767.98px) {
+  .sadaqah .category h4 { font-size: 21px; }  
+}
+/*..... Responsive Section End ......*/

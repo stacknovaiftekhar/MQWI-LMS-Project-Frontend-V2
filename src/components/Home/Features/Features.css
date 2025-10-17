@@ -1,0 +1,81 @@
+
+/*.....................................
+      05. Feature Section Start
+.....................................*/
+.feature { background: #EDF9F2; }
+
+.feature .section-heading img { margin-bottom: 1.5rem; }
+.feature .section-heading .slogan { color: #1D8348; margin-bottom: 2rem; }
+
+.feature .card {
+  background: #F1F9F4;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+.feature .card .icon {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem auto;
+  background-color: #239B56;
+  border-radius: 15% 0 25% 0;
+}
+.feature .card .icon i {
+  font-size: 2rem;
+  color: #F1F9F4;
+  transition: color 0.3s, transform 0.3s;
+}
+.feature .card .icon i:hover {
+  color: #E1A95B;
+  transform: scale(1.1);
+}
+
+.feature .card .card-body { padding-block: 0 1.5rem; }
+/* ------ Feature Section End ------ */
+
+/*.....................................
+      Responsive Section Start
+.....................................*/
+/* X-Large Devices (Large Desktops, 1200px to <1400px) */
+@media (max-width: 1399.98px) {
+  .feature .card .card-title { font-size: 1.12rem; }
+}
+
+/* Large Devices (Desktops or Laptops, 992px to <1200px) */
+@media (max-width: 1199.98px) {
+  .feature .card .card-title { font-size: 1.25rem; padding: 0 1rem; }
+}
+
+/* Medium Devices (Laptops or Tablets, 768px to <992px) */
+@media (max-width: 991.98px) {
+  .feature .card .card-text { padding: 0 0.5rem; }
+}
+
+/* Small Devices (Landscape Phones, 576px to <768px) */
+@media (max-width: 767.98px) {
+  .feature .card .card-title { font-size: 1.06rem; padding: 0; }
+  .feature .card .card-text { padding: 0 0; }
+}
+
+/* X-Small Devices (Portrait Phones, 480px to <576px) */
+@media (max-width: 575.98px) {
+  .feature .card .card-title { font-size: 1.25rem; }
+  .feature .card .card-text { padding: 0 2rem; }
+}
+
+/* XX-Small Devices (Small Phones, 320px to <480px) */
+@media (max-width: 479.98px) {
+  .feature .card .card-text { padding: 0 0; }
+}
+
+/* XS-Small Devices (Small Phones, 280px to <320px) */
+@media (max-width: 319.98px) {
+  .feature .section-heading .slogan { font-size: 15px; }
+  .feature .card .card-title { font-size: 1.11rem; }
+    
+}
+/*..... Responsive Section End ......*/

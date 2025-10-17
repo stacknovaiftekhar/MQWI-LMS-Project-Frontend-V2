@@ -1,0 +1,79 @@
+/*.....................................
+          Contact Area Start
+.....................................*/
+.contact-page .contact-info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border: 8px solid #D5F5E3;
+  margin-top: 4rem;
+  height: 196px;
+}
+.contact-page .contact-info span {
+  background: #F2F8F5;
+  color: #009146;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -58px;
+  width: 108px;
+  height: 108px;
+  margin: auto;
+  font-size: 2rem;
+  line-height: 86px;
+  border: 8px solid #D5F5E3;
+  border-radius: 100%;
+  transition: all 0.3s;
+}
+.contact-page .contact-info p { margin: 0; }
+.contact-page .contact-info:hover span {
+  background: #009146;
+  color: #F2F8F5;
+}
+
+/* contact-page icon */
+.contact-page .icon {
+  width: 85px;
+  height: 85px;
+  margin: 1.5rem auto;  
+  background: #ABEBC6;
+  border-radius: 15% 0 25% 0;
+  transition: background 0.3s, transform 0.3s;
+}
+.contact-page .icon i {
+  font-size: 3rem;
+  color: #1D8348;
+  transition: color 0.3s, transform 0.3s;
+}
+.contact-page .icon:hover { background: #1D8348; }
+.contact-page .icon:hover i {
+  color: #D5F5E3;
+  transform: scale(1.1);
+}
+
+/* contact-form icon */
+.contact-form .icon {
+  position: absolute;
+  font-size: 18px;
+  right: 12px;
+  top: 37px;
+  color: #888;
+}
+.contact-form .icon-right { right: 24px; }
+
+
+/*.....................................
+      Responsive Section Start
+.....................................*/
+/* Large Devices (Desktops or Laptops, 992px to <1200px) */
+@media (max-width: 1199.98px) {
+  .contact-page .heading h4 { font-size: 21px; }
+}
+
+/* X-Small Devices (Portrait Phones, 480px to <576px) */
+@media (max-width: 575.98px) {
+  .contact-page .heading h4 { font-size: 19px; }
+}
+/*..... Responsive Section End ......*/

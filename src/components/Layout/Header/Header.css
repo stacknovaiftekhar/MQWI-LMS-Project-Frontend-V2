@@ -1,0 +1,151 @@
+/*.....................................
+      01. Header Section Start
+.....................................*/
+
+/************** TOPBAR ***************/
+.topbar { background: #239B56; }
+
+/* top-social */
+.topbar .top-social li a {
+  font-size: 24px;
+  color: #EAFAF1;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+.topbar .top-social li a:hover { opacity: 1; }
+
+/* top-quote */
+.topbar .top-quote h6 {
+  color: #EAFAF1;
+  padding: 1rem 0 0.5rem;
+}
+.topbar .top-quote h6:hover { color: #D5F5E3; }
+.topbar .top-quote span { font-size: 12px; }
+
+/* top-button */
+.topbar .top-button .btn-top {
+  width: 75px;
+  color: #EAFAF1;
+  border: none;
+  font-size: 12px;
+  background: #186A3B;
+  transition: all 0.3s;
+}
+.topbar .top-button .btn-top:first-child {
+  margin-right: 1px;
+  border-right: 1px solid #2ECC71;
+}
+.topbar .top-button .btn-top:hover {
+  background: #2ECC71;
+  color: #111;
+}
+
+.topbar .top-button .btn-dash {
+  width: 40px;
+  color: #EAFAF1;
+  border: none;
+  font-size: 16px;
+  background: #186A3B;
+  transition: all 0.3s;
+}
+.topbar .top-button .btn-top:first-child {
+  margin-right: 1px;
+  border-right: 1px solid #2ECC71;
+}
+.topbar .top-button .btn-top:hover {
+  background: #2ECC71;
+  color: #111;
+}
+
+.topbar .top-button .btn-size {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 25px;
+  padding: 6px;
+}
+.topbar .top-button .btn-logout {
+  height: 27px;
+}
+/*........... TOPBAR END ............*/
+
+
+/************** NAVBAR ***************/
+.nav-bg { background: #EAFAF1; }
+
+.navbar.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* navbar-brand */
+.navbar .navbar-brand img { height: 64px; }
+
+/* nav-item */
+.navbar .nav-item a {
+  font-family: "Hind Siliguri", serif;
+  color: #186A3B;
+}
+.navbar .nav-item a:hover { color: #DE9125; }
+.navbar .nav-item .active { color: #DE9125; }
+
+.navbar-nav .dropdown:hover > .dropdown-menu { display: block; }
+
+/* nav search */
+.navbar .input-group .form-control:focus {
+  border-color: #2ECC71;
+  box-shadow: 0 0 0 0.25rem rgba(46, 204, 112, 0.25);
+}
+.navbar .input-group .btn {
+  background: white;
+  border: 1px solid #DEE2E6;
+  border-left: none;
+}
+.navbar .input-group .btn:hover { color: #DE9125; }
+/*........... NAVBAR END ............*/
+/*------- Header Section End --------*/
+
+/*.....................................
+      Responsive Section Start
+.....................................*/
+/* Medium Devices (Laptops or Tablets, 768px to <992px) */
+@media (max-width: 991.98px) {
+  .topbar .top-quote span { font-size: 10.5px; }
+}
+
+/* Small Devices (Landscape Phones, 576px to <768px) */
+@media (max-width: 767.98px) {
+  .topbar .top-quote h6 { padding-bottom: 0; margin-bottom: 0; }
+  .topbar .top-quote span { font-size: 12px; }
+  .topbar .top-button { margin-bottom: 8px; }
+}
+
+/* X-Small Devices (Portrait Phones, 480px to <576px) */
+@media (max-width: 575.98px) {
+  .topbar { padding: 0 1rem; }
+}
+
+/* XX-Small Devices (Small Phones, 320px to <480px) */
+@media (max-width: 479.98px) {
+  .topbar { padding: 0; }
+  .topbar .top-quote h6 { font-size: 14px; }
+  .topbar .top-quote span { font-size: 9.5px; }
+  .topbar .top-button .btn-top { width: 100%; }
+
+  .navbar .navbar-brand img { width: 214px; height: 55px; }
+}
+
+/* XS-Small Devices (Small Phones, 280px to <320px) */
+@media (max-width: 319.98px) {
+  .topbar .top-quote h6 { font-size: 12px; }
+  .topbar .top-quote span { font-size: 8.5px; }
+  .topbar .top-social li a { font-size: 20px; }
+  .topbar .top-button .btn-top { font-size: 11px; }
+
+  .navbar .navbar-brand img { width: 180px; height: 46px; }
+}
+/*..... Responsive Section End ......*/

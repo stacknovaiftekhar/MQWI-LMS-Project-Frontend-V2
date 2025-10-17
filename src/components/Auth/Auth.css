@@ -1,0 +1,32 @@
+/*.....................................
+      Auth Section Start
+.....................................*/
+
+.auth {
+  padding: 2rem;
+  border: 1px solid #CCC;
+}
+.auth h3 { color: #1D8348; font-weight: 600; }
+
+.auth .form-control:focus {
+  border-color: #2ECC71;
+  box-shadow: 0 0 0 0.25rem rgba(46, 204, 112, 0.25);
+}
+
+.auth .eye {
+  position: absolute;
+  font-size: 18px;
+  right: 15px;
+  top: 37px;
+  cursor: pointer;
+  color: #888;
+}
+
+.auth .btn-text {
+  text-decoration: none;
+  color: #1D8348;
+}
+.auth .btn-text:hover { color: #DF9F45; }
+
+.auth-bottom { padding: 1.25rem 0 1rem; }
+/*-------- Auth Section End ---------*/

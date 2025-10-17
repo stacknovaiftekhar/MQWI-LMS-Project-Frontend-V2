@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mina:wght@400;700&display=swap');
+
+
+.hind-siliguri, .hsf {
+  font-family: "Hind Siliguri", serif;
+  font-style: normal;
+}
+.hsl { font-weight: 300; }  /* .hind-siliguri-light */
+.hsr { font-weight: 400; }  /* .hind-siliguri-regular */
+.hsm { font-weight: 500; }  /* .hind-siliguri-medium */
+.hss { font-weight: 600; }  /* .hind-siliguri-semibold */
+.hsb { font-weight: 700; }  /* .hind-siliguri-bold */
+
+.anek-bangla, .abf {
+  font-family: "Anek Bangla", serif !important;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.abr { font-weight: 400; }  /* .anek-bangla-bold */
+.abb { font-weight: 700; }  /* .anek-bangla-regular */
+
+
+/*.....................................
+      01. Theme Default CSS Start
+.....................................*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html, body {
+  font-size: 16px;
+  color: #444;
+  font-family: "Lato", sans-serif;
+  vertical-align: baseline;
+  scroll-behavior: smooth;
+  line-height: 1.6; /* 26px / 1.15 */
+  font-weight: 400;
+}
+
+
+/************* RESET CSS *************/
+a {
+  color: #186A3B;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+a:hover {
+  color: #DE9125;
+  text-decoration: none;
+}
+a:active {
+  outline: 0 none;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  outline: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+input:focus { box-shadow: none; }
+input:active {
+  outline: none;
+  box-shadow: none;
+}
+
+textarea {
+  outline: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+textarea:focus {
+  outline: 2px solid #096b89;
+  outline-offset: 2px;
+  box-shadow: none;
+}
+textarea:active {
+  outline: none;
+  box-shadow: none;
+}
+
+button {
+  outline: none;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+}
+button:focus {
+  outline: 2px solid #096b89;
+  outline-offset: 2px;
+  box-shadow: none;
+  border: none;
+}
+button:active {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+.accordion-button:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.fix { overflow: hidden; }
+
+.clear { clear: both; }
+
+::-moz-selection {
+  background: #00c3ff;
+  text-shadow: none;
+}
+
+::selection {
+  background: #00c3ff;
+  text-shadow: none;
+}
+
+
+/************ CUSTOM CSS *************/
+.eye {
+  position: absolute;
+  font-size: 18px;
+  right: 15px;
+  top: 38px;
+  cursor: pointer;
+  color: #888;
+}
+
+.bg-green12 { background: #F2F8F5; }
+.bg-orange { background: #DE9125; }
+.text-orange { color: #DE9125; }
+
+.w-20 { width: 20%; }
+.w-33 { width: 33.33%; }
+.w-67 { width: 66.67%; }
+.w-40 { width: 40%; }
+
+.form-control:focus { box-shadow: 0 0 0 0.25rem rgba(46, 204, 112, 0.25); }
+.form-select:focus { box-shadow: 0 0 0 0.25rem rgba(46, 204, 112, 0.25); }
+
+/* JQuery Data Table */
+.dt-empty { color: #dc3545 !important; }
+.dt-paging ul.pagination .active>.page-link, .page-link.active {
+  background-color: #28B463 !important;
+  border-color: #28B463 !important;
+}
+
+/************ TYPOGRAPHY *************/
+h1, h2, h3, h4, h5, h6 { font-family: "Poppins", sans-serif; }
+
+/* h6 { font-size: 1.15rem; }
+h1 = 36 > 40  |  h2 = 30 > 32  |  h3 = 24 > 28  |  h4 = 18 > 24  |  h5 = 16 > 20
+*/
+p { margin-bottom: 0.5rem; }
+
+.text-justify {
+  text-align: justify !important;
+  text-align-last: left !important;
+}
+
+
+/************** SECTION **************/
+.section-padding { padding: 5rem 0 4rem; }
+@media (max-width: 767.98px) {
+  .section-padding { padding: 4rem 0 3rem; }
+}
+
+.section-heading h2 { color: #222; margin-bottom: 1rem; }
+.section-heading img { margin-bottom: 3rem; }
+@media (max-width: 767.98px) {
+  .section-heading img { margin-bottom: 2rem; }
+}
+
+/*************** BUTTON **************/
+.btn-all span { position: relative; }
+.btn-all::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+/** btn-general **/
+.btn-gen {
+  background: #1D8348;
+  color: #EAFAF1;
+  transition: all 0.3s;
+}
+.btn-gen:hover { background: #DF9F45; }
+
+/** btn-transparent (btn2) **/
+.btn-tp {
+  position: relative;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: #F2F8F5;
+  text-transform: uppercase;
+  padding: 12px 32px;
+  transition: all 0.3s;
+}
+.btn-tp::before {
+  background: #239B56;
+  inset: 10%; opacity: 0;
+}
+.btn-tp:hover {
+  background: #239B56;
+  border-color: #239B56;
+}
+.btn-tp:hover::before { inset: 0; opacity: 1; }
+
+/** btn-nav (btn3) (btn2) **/
+.btn-nav {
+  padding: 0 0;
+  transition: all 0.3s;
+}
+.btn-nav::before {
+  background: #239B56;
+  inset: 10%; opacity: 0;
+}
+.btn-nav:hover {
+  background: #239B56;
+  padding: 0 4px;
+}
+.btn-nav:hover::before { inset: 0; opacity: 1; }
+
+/** btn-white (btn3) **/
+.btn-wh {
+  position: relative;
+  font-weight: 700;
+  padding: 0.8rem 3rem;
+  color: #111;
+  text-transform: uppercase;
+}
+.btn-wh::before { background: #F2F8F5; }
+.btn-wh:hover {
+  background: #E5AE49;
+  color: #FFF;
+}
+.btn-wh:hover::before { inset: 10%; opacity: 0; }
+
+/** btn-orange (btn1) **/
+.btn-orange {
+  background: #E1A95B;
+  color: #FFF !important;
+  transition: all 0.3s;
+}
+.btn-orange:hover { background: #C19036; }
+
+/** btn-green (btn4) **/
+.btn-green {
+  background: #1D8348;
+  color: #FFF !important;
+}
+.btn-green:hover { background: #E1A95B; }
+
+/** btn-no-background (btn6) **/
+.btn-nobg {
+  display: inline-block;
+  color: #239B56;
+  font-weight: 700;
+}
+.btn6:hover { color: #E5AE49; }
+
+.btn-fixed-size {
+  width: 32px;
+  height: 32px;
+}
+
+/** btn-flex **/
+.btn-flex {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .btn-flex {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 992px) {
+  .btn-flex {
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+}
+/* ----- Theme Default CSS End ----- */

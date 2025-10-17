@@ -1,0 +1,16 @@
+.temp {
+  text-align: center;
+  margin-top: 150px;
+}
+
+.temp h1, .temp h2 {
+  font-family: "Hind Siliguri", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+  color: #186A3B;
+}
+
+.temp .btn {
+  margin-top: 2rem;
+}

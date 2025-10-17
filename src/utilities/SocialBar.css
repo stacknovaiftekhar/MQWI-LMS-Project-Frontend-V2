@@ -1,0 +1,168 @@
+/************ SOCIAL ICON ************/
+.social-bar {
+  position: fixed;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 1000;
+}
+
+/* Base Icon Style */
+.social-bar .social-icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  font-size: 28px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Tooltip */
+.social-bar .social-icon::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  right: 55px;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 13px;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(-50%);
+  top: 50%;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.social-bar .social-icon:hover::after { opacity: 1; }
+
+/* Brand Colors + Dual Animations */
+.social-bar .social-icon.facebook { background: #1877f2;
+  animation: breath-facebook 1.2s infinite alternate ease-in-out,
+             breathing-facebook 3s infinite ease-in-out;
+}
+.social-bar .social-icon.whatsapp { background: #25d366;
+  animation: breath-whatsapp 1.2s infinite alternate ease-in-out,
+             breathing-whatsapp 3s infinite ease-in-out;
+}
+.social-bar .social-icon.messenger { background: #0084ff;
+  animation: breath-messenger 1.2s infinite alternate ease-in-out,
+             breathing-messenger 3s infinite ease-in-out;
+}
+.social-bar .social-icon.call { background: #FD9832;
+  animation: breath-call 1.2s infinite alternate ease-in-out,
+             breathing-call 3s infinite ease-in-out;
+}
+
+/* Tooltip Backgrounds */
+.social-bar .social-icon.facebook::after { background: #1877f2; }
+.social-bar .social-icon.whatsapp::after { background: #25d366; }
+.social-bar .social-icon.messenger::after { background: #0084ff; }
+.social-bar .social-icon.call::after { background: #FD9832; }
+
+/* Hover: Party Effects */
+.social-bar .social-icon:hover {
+  transform: scale(1.25) rotate(-5deg);
+  animation: bounce 0.6s ease; 
+}
+
+/* Hover Glow Intensified */
+.social-bar .social-icon.facebook:hover {
+  box-shadow: 0 0 28px rgba(24, 119, 242, 1),
+              0 0 48px rgba(24, 119, 242, 0.9);
+}
+.social-bar .social-icon.whatsapp:hover {
+  box-shadow: 0 0 28px rgba(37, 211, 102, 1),
+              0 0 48px rgba(37, 211, 102, 0.9);
+}
+.social-bar .social-icon.messenger:hover {
+  box-shadow: 0 0 28px rgba(0, 132, 255, 1),
+              0 0 48px rgba(0, 132, 255, 0.9);
+}
+.social-bar .social-icon.call:hover {
+  box-shadow: 0 0 28px rgba(253, 152, 50, 1),
+              0 0 48px rgba(253, 152, 50, 0.9);
+}
+
+/* Breathing Glow Animations */
+@keyframes breathing-facebook {
+  0%, 100% { box-shadow: 0 0 20px rgba(24, 119, 242, 0.6); }
+  50%      { box-shadow: 0 0 30px rgba(24, 119, 242, 0.85); }
+}
+@keyframes breathing-whatsapp {
+  0%, 100% { box-shadow: 0 0 20px rgba(37, 211, 102, 0.6); }
+  50%      { box-shadow: 0 0 30px rgba(37, 211, 102, 0.85); }
+}
+@keyframes breathing-messenger {
+  0%, 100% { box-shadow: 0 0 20px rgba(0, 132, 255, 0.6); }
+  50%      { box-shadow: 0 0 30px rgba(0, 132, 255, 0.85); }
+}
+@keyframes breathing-call {
+  0%, 100% { box-shadow: 0 0 20px rgba(253, 152, 50, 0.6); }
+  50%      { box-shadow: 0 0 30px rgba(253, 152, 50, 0.85); }
+}
+
+/* Breath Animations */
+@keyframes breath-facebook {
+  from { animation-timing-function: ease-out; }
+  to {
+    transform: scale(1.25) translateY(-5px) perspective(1px);
+    text-shadow: 0 0 24px rgba(24, 119, 242, 0.7);
+    animation-timing-function: ease-in-out;
+  }
+}
+@keyframes breath-whatsapp {
+  from { animation-timing-function: ease-out; }
+  to {
+    transform: scale(1.25) translateY(-5px) perspective(1px);
+    text-shadow: 0 0 24px rgba(37, 211, 102, 0.7);
+    animation-timing-function: ease-in-out;
+  }
+}
+@keyframes breath-messenger {
+  from { animation-timing-function: ease-out; }
+  to {
+    transform: scale(1.25) translateY(-5px) perspective(1px);
+    text-shadow: 0 0 24px rgba(0, 132, 255, 0.7);
+    animation-timing-function: ease-in-out;
+  }
+}
+@keyframes breath-call {
+  from { animation-timing-function: ease-out; }
+  to {
+    transform: scale(1.25) translateY(-5px) perspective(1px);
+    text-shadow: 0 0 24px rgba(253, 152, 50, 0.7);
+    animation-timing-function: ease-in-out;
+  }
+}
+
+/* Bounce on Hover */
+@keyframes bounce {
+  0%   { transform: scale(1.25) rotate(-5deg); }
+  50%  { transform: scale(1.35) rotate(5deg); }
+  100% { transform: scale(1.25) rotate(-5deg); }
+}
+
+/* Sparkles Around Icons */
+@keyframes sparkle {
+  0%, 100% {
+    box-shadow:
+      0 0 6px rgba(255, 255, 255, 0.3),
+      0 0 12px rgba(255, 255, 255, 0.2),
+      0 0 18px rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    box-shadow:
+      0 0 12px rgba(255, 255, 255, 0.6),
+      0 0 24px rgba(255, 255, 255, 0.4),
+      0 0 36px rgba(255, 255, 255, 0.2);
+  }
+}

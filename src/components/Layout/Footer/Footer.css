@@ -1,0 +1,89 @@
+/*.....................................
+      12. Footer Section Start
+.....................................*/
+footer h5 { color: #EAFAF1; text-transform: uppercase; }
+footer p, footer i, footer a, footer span { color: #D5F5E3; }
+
+footer .footer-top { background: #239B56; padding: 3rem 0 2rem; }
+footer .footer-widget img { margin-bottom: 1.5rem; }
+footer .footer-widget i {
+  color: #58D68D;
+  display: inline-block;
+  margin-right: 0.7rem;
+  font-size: 0.9rem;
+  width: 1rem;
+}
+
+/* about-foo */
+footer .footer-widget .about-foo p { font-size: 1rem; line-height: 1.4; }
+
+/* contact-foo */
+footer .footer-widget .contact-foo ul li { margin-bottom: 0.75rem; }
+footer .footer-widget .contact-foo strong { color: #82E0AA; }
+
+.footer-widget .social-foo li a {
+  color: #D5F5E3;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+.footer-widget .social-foo li a:hover { opacity: 1; }
+
+/* link-foo */
+footer .footer-widget .link-foo ul li { margin-bottom: 0.3rem; }
+footer .footer-widget .link-foo ul li a:hover {  color: #58D68D; }
+
+/* footer-bottom */
+footer .footer-bottom { background: #186A3B; padding: 1rem 0 0.7rem; }
+footer .footer-bottom .copyright p span { color: #82E0AA; }
+footer .footer-bottom .developer p span { color: #E5AE49; }
+/*------- Footer Section End --------*/
+
+/*.....................................
+      Responsive Section Start
+.....................................*/
+/* X-Large Devices (Large Desktops, 1200px to <1400px) */
+@media (max-width: 1399.98px) {
+  footer .contact-foo ul li span.email { font-size: 0.93rem; }
+}
+
+/* Large Devices (Desktops or Laptops, 992px to <1200px) */
+@media (max-width: 1199.98px) {
+  footer .footer-widget .about-foo p { font-size: 0.92rem; }
+  footer .contact-foo ul li span.email { font-size: 0.75rem; }
+}
+
+/* Medium Devices (Laptops or Tablets, 768px to <992px) */
+@media (max-width: 991.98px) {
+  footer .footer-widget .about-foo p { font-size: 1.1rem; }
+  footer .contact-foo ul li span.email { font-size: 1rem; }
+}
+
+/* Small Devices (Landscape Phones, 576px to <768px) */
+@media (max-width: 767.98px) {
+  footer .footer-widget .about-foo { margin-bottom: 2rem; }
+  footer .footer-widget .about-foo p { font-size: 1rem; }
+  footer .footer-bottom p { font-size: 0.9rem; }
+}
+
+/* X-Small Devices (Portrait Phones, 480px to <576px) */
+@media (max-width: 575.98px) {
+  footer .footer-widget .about-foo p { font-size: 0.9rem; }
+  footer .footer-widget .social-foo { margin-bottom: 2.5rem; }
+  footer .footer-bottom p { font-size: 0.8rem; }
+}
+
+/* XX-Small Devices (Small Phones, 320px to <480px) */
+@media (max-width: 479.98px) {
+  footer .footer-widget { margin-left: 0 !important; }
+  footer .footer-widget .about-foo {
+    justify-content: center; text-align: center; }
+  footer .about-foo .col-4 { width: 50%; }
+  footer .about-foo .col-8 { width: 100%; }
+  footer .footer-widget .about-foo p { font-size: 0.95rem; }
+}
+
+/* XS-Small Devices (Small Phones, 280px to <320px) */
+@media (max-width: 319.98px) {
+  footer .contact-foo ul li span.email { font-size: 0.9rem; }
+}
+/*..... Responsive Section End ......*/

@@ -1,0 +1,42 @@
+/*.....................................
+      09. Teachers Section Start
+.....................................*/
+.teachers { background: #2ECC71; }
+
+.teachers .card {
+  background: #EAFAF1;
+  margin-bottom: 2rem;
+}
+
+.teachers .card .card-img {
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+}
+.teachers .card .card-img img { transition: transform 0.3s; }
+.teachers .card:hover .card-img img { transform: scale(1.1); }
+
+.teachers .card .card-body {
+  border: 8px solid #ABEBC6;
+  border-top: 0;
+  border-radius: 0 0 5px 5px;
+}
+/* ----- Teachers Section End ------ */
+
+/*.....................................
+      Responsive Section Start
+.....................................*/
+/* X-Large Devices (Large Desktops, 1200px to <1400px) */
+@media (max-width: 1399.98px) {
+  .teachers .card .card-title { font-size: 1.4rem; }
+}
+
+/* Large Devices (Desktops or Laptops, 992px to <1200px) */
+@media (max-width: 1199.98px) {
+  .teachers .card .card-title { font-size: 1.12rem; }
+}
+
+/* Medium Devices (Laptops or Tablets, 768px to <992px) */
+@media (max-width: 991.98px) {
+  .teachers .card .card-title { font-size: 1.25rem; }
+}
+/*..... Responsive Section End ......*/

@@ -1,0 +1,101 @@
+/*.....................................
+      06. Timing Section Start
+.....................................*/
+/* parallax */
+.parallax  {
+  background-image: url('../../../assets/images/parallax/parallax.jpg');
+  background-size: cover;
+  background-position: center;
+  /* background-position: center center !important; */
+  /* background-repeat: no-repeat !important; */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .timings { */
+  /* padding: 5rem 0; */
+  /* position: relative; */
+  /* background: url(images/banner/bg-1.jpg); */
+/* } */
+
+
+/* global */
+.af::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+.timings .section-heading {
+  /* display: block; */
+  position: relative;
+  z-index: 9;
+  /* padding: 0; */
+  margin: 0 0 56px;
+  text-align: center;
+}
+.timings .section-heading h2 {
+  /* position: relative; */
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0;
+  padding: 0 0 28px;
+  /* display: block; */
+}
+.timings .section-heading h2:after {
+  /* content: ''; */
+  /* position: absolute; */
+  /* left: 0;
+  right: 0;
+  bottom: 0; */
+  /* height: 8px; */
+  background: url(images/section/2.png) no-repeat;
+  /* background-position: center; */
+}
+/* global end */
+
+
+
+
+/* timings */
+.timings .prayer-list {
+  position: relative;
+  z-index: 999;
+  background: rgba(255, 255, 255, 0.1);
+  /* display: block; */
+  /* border-radius: 5px; */
+  /* margin-bottom: 30px; */
+}
+.timings .prayer-list h4 {
+  display: block;
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  padding: 18px 0;
+}
+.timings .prayer-list strong {
+  display: block;
+  margin: 0 0 20px;
+  color: #fff;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+.timings .prayer-list button {
+  display: inline-block;
+  background: #009146;
+  color: #fff;
+  border-radius: 5px;
+  margin: 0 0 28px;
+  padding: 10px 23px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.timings .prayer-list button:hover { background: #e5ae49; }
+/* ------ Timing Section End ------- */

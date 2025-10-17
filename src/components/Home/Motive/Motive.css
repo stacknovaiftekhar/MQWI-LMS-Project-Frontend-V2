@@ -1,0 +1,162 @@
+/*.....................................
+      04. Motive Section Start
+.....................................*/
+.motive { background: #ABEBC6; }
+
+.motive .video-thumb figure { position: relative; }
+.motive .video-thumb figure .thumbnail {
+  margin: 0 30px 0 70px;
+  position: relative;
+  z-index: 3;
+}
+.motive .video-thumb figure .thumbnail:after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.motive .video-thumb figure .thumbnail img { width: 100%; }
+.motive .video-thumb figure .thumbnail .play-ico {
+  width: 72px; height: 72px;
+  background: url("../../../assets/images/icon/play.png");
+  background-size: cover;
+  position: absolute;
+  inset-inline: 0;
+  top: 40%;
+  margin: auto;
+  z-index: 4;
+  border-radius: 50%;
+  /* animation: ripple 2s linear infinite; */
+  animation: ripple-green 2s ease-in-out infinite;
+}
+.motive .video-thumb figure .thumbnail .play-ico span {
+  border-radius: 50%;
+  animation: ripple-red 2s linear infinite;
+}
+.motive .video-thumb figure .thumbnail .play-ico:hover {
+  background: url("../../../assets/images/icon/playh.png");
+  background-size: cover;
+  color: #2ECC71;
+}
+.motive .video-thumb figure .watch {
+  position: absolute;
+  left: -108px;
+  top: 152px;
+  transform: rotate(-90deg);
+  border: 8px solid #E1A95B;
+  z-index: 2;
+}
+.motive .video-thumb figure .watch h4 {
+  color: #E1A95B;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 20px 110px 100px 65px;
+}
+
+.motive .goal p { font-size: 18px; }
+
+.motive .facilities h6 { font-size: 1.2rem; }
+.motive .facilities ul li::before {
+  content: "✓";
+  color: #E1A95B;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+@keyframes ripple-green {
+  0%, 100% {
+    /* box-shadow: 0 0 0 0 rgba(119, 191, 215, 0.5); */
+    box-shadow: 0 0 0 0 rgba(225, 169, 91, 0.5);
+    transform: scale(0.9);
+  }
+  50% {
+    box-shadow: 0 0 0 50px rgba(225, 169, 91, 0.1);
+    transform: scale(1.1);
+  }
+}
+@keyframes ripple-red {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(46, 204, 113, 0.5);
+    transform: scale(0.9);
+  }
+  50% {
+    box-shadow: 0 0 0 50px rgba(46, 204, 113, 0.1);
+    transform: scale(1.1);
+  }
+}
+/* ------ Motive Section End ------- */
+
+/*.....................................
+      Responsive Section Start
+.....................................*/
+/* X-Large Devices (Large Desktops, 1200px to <1400px) */
+@media (max-width: 1399.98px) {
+  .motive .video-thumb figure .watch {
+    transform: scale(0.82) rotate(-90deg);
+    left: -112px; top: 110px; }
+  .motive .goal p { font-size: 17px; line-height: 1.5; }
+}
+
+/* Large Devices (Desktops or Laptops, 992px to <1200px) */
+@media (max-width: 1199.98px) {
+  .motive .video-thumb figure .thumbnail { margin: 0 15px 0 50px; }
+  .motive .video-thumb figure .watch {
+    transform: scale(0.73) rotate(-90deg);
+    left: -130px; top: 89px; }
+    .motive .facilities ul li { font-size: 0.85rem; }
+}
+
+/* Medium Devices (Laptops or Tablets, 768px to <992px) */
+@media (max-width: 991.98px) {
+  /* .motive { padding: ; } */
+  .motive .video-thumb figure .thumbnail { margin: 0 50px 0 90px; }
+  .motive .video-thumb figure .watch {
+    transform: scale(1.3) rotate(-90deg);
+    left: -85px; top: 222px; }
+  .motive .goal h2 { margin-top: 3rem; }
+  .motive .facilities ul li { font-size: 1rem; }
+}
+
+/* Small Devices (Landscape Phones, 576px to <768px) */
+@media (max-width: 767.98px) {
+  .motive .video-thumb figure .thumbnail { margin: 0 30px 0 70px; }
+  .motive .video-thumb figure .watch {
+    transform: scale(1) rotate(-90deg);
+    left: -104px; top: 151px; }
+  .motive .video-thumb figure .watch h4 { padding: 18px 95px 95px 70px; }
+  .motive .facilities ul li { font-size: 0.8rem; }
+}
+
+/* X-Small Devices (Portrait Phones, 480px to <576px) */
+@media (max-width: 575.98px) {
+  .motive .video-thumb figure .watch {
+    transform: scale(0.86) rotate(-90deg);
+    left: -106px; top: 118px; }
+  .motive .facilities ul li { font-size: 1rem; }
+}
+
+/* XX-Small Devices (Small Phones, 320px to <480px) */
+@media (max-width: 479.98px) {
+  .motive .video-thumb figure .thumbnail { margin: 0 15px 0 50px; }
+  .motive .video-thumb figure .watch {
+    transform: scale(0.73) rotate(-90deg);
+    left: -103px; top: 84px; }
+  .motive .video-thumb figure .watch h4 { font-size: 1.1rem;
+    padding: 16px 50px 30px 50px; }
+  .motive .goal h2 { margin-top: 2rem; }
+  .motive .goal p { font-size: 16px; }
+  .motive .facilities ul li { font-size: 0.95rem; }
+}
+
+/* XS-Small Devices (Small Phones, 280px to <320px) */
+@media (max-width: 319.98px) {
+  .motive .video-thumb figure .thumbnail { margin: 0 10px 0 40px; }
+  .motive .video-thumb figure .watch {
+    transform: scale(0.7) rotate(-90deg);
+    left: -102px; top: 71px; }
+  .motive .video-thumb figure .watch h4 { font-size: 1.1rem;
+    padding: 16px 50px 30px 30px; }
+  .motive .facilities ul li { font-size: 0.85rem; }
+}
+/*..... Responsive Section End ......*/

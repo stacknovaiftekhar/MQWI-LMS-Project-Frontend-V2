@@ -1,0 +1,23 @@
+/*.....................................
+      08. Counter Section Start
+.....................................*/
+.counters .counter { padding-block: 12%; }
+
+.counters .counter .ico { font-size: 2.5rem; }
+.counters .counter h1 { margin-bottom: 0; }
+.counters .counter .count span { font-weight: 900; }
+
+.counters .counter1 { background: #28B463; }
+.counters .counter2 { background: #239B56; }
+.counters .counter3 { background: #1D8348; }
+.counters .counter4 { background: #186A3B; }
+/* ------ Counter Section End ------ */
+
+/*.....................................
+      Responsive Section Start
+.....................................*/
+/* XX-Small Devices (Small Phones, 320px to <480px) */
+@media (max-width: 479.98px) {
+  .counters .counter h1 { font-size: 1.5rem; }
+}
+/*..... Responsive Section End ......*/

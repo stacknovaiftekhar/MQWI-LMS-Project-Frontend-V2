@@ -1,0 +1,39 @@
+/*.....................................
+      Responsive Section Start
+.....................................*/
+/* X-Large Devices (Large Desktops, 1200px to <1400px) */
+@media (max-width: 1399.98px) {
+  .reset-message h5 { font-size: 18.5px; }
+}
+
+/* Large Devices (Desktops or Laptops, 992px to <1200px) */
+@media (max-width: 1199.98px) {
+  .reset-message h5 { font-size: 1.25rem; }  
+  .reset-message p:last-child { font-size: 15.25px; }
+}
+
+/* Medium Devices (Laptops or Tablets, 768px to <992px) */
+@media (max-width: 991.98px) {
+  .reset-message h5 { font-size: 19.5px; }
+  .reset-message p:last-child { font-size: 15.5px; }
+}
+
+/* Small Devices (Landscape Phones, 576px to <768px) */
+@media (max-width: 767.98px) {
+  .reset-message { padding: 1.5rem; }
+  .reset-message h5 { font-size: 18px; }
+  .reset-message p:last-child { font-size: 1rem; }
+}
+
+/* X-Small Devices (Portrait Phones, 480px to <576px) */
+@media (max-width: 575.98px) {
+  .reset-message { padding: 1.25rem; }
+  .reset-message h5 { font-size: 16px; }
+}
+
+/* XX-Small Devices (Small Phones, 320px to <480px) */
+@media (max-width: 479.98px) {
+  .reset-message h5 { font-size: 18.5px; }
+  .reset-message p:last-child { font-size: 14.7px; }
+}
+/*..... Responsive Section End ......*/

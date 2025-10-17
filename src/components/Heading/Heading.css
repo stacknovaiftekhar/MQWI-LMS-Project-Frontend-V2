@@ -1,0 +1,39 @@
+/*.....................................
+        Page Heading Start
+.....................................*/
+.page-heading {
+  position: relative;
+  height: 220px;
+  background-image: url("../../assets/images/jarallax/heading.jpg");
+}
+.page-heading::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.page-heading .heading-content {
+  position: relative;
+  z-index: 1;
+  padding-top: 4rem;
+}
+.page-heading .heading-content h1 { color: #FFF; }
+
+.page-heading .breadcrumb {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 4px 8px 2px;
+  margin-top: 0.5rem;
+}
+.page-heading .breadcrumb li {
+  display: inline-block;
+  padding: 0 4px;
+}
+.page-heading .breadcrumb li a { color: #ABEBC6; }
+.page-heading .breadcrumb li a:hover { color: #DF9F45; }
+.page-heading .breadcrumb li i { color: #EAFAF1; }
+.page-heading .breadcrumb li:last-child a { color: #58D68D; }
+.page-heading .breadcrumb li:last-child a:hover { color: #E1A95B; }
+/* ------- Page Heading End -------- */

@@ -1,0 +1,124 @@
+/*.....................................
+      02. Carousel Section Start
+.....................................*/
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+/* carousel-inner */
+.carousel .carousel-inner .carousel-item::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+.carousel .carousel-item .carousel-caption { top: 8%; }
+.carousel .carousel-caption .content img {
+  margin-block-end: 3%;
+  padding: 2% 0;
+}
+.carousel .carousel-caption .content h2 {
+  font-family: "Hind Siliguri", serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-block-end: 4%;
+}
+
+.carousel .carousel-caption .content .orange1 { color: #DE9125; }
+.carousel .carousel-caption .content .green3 { color: #239B56; }
+
+/* carousel-control */
+.carousel .carousel-control {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  opacity: 1;
+  top: 44%;
+  transition: all 0.3s;
+}
+.carousel .carousel-control span { z-index: 1; }
+.carousel .carousel-control:hover::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: #239B56;
+}
+
+.carousel .carousel-control-prev {
+  inset-inline-start: -7%;
+  transition: all 0.5s;
+}
+.carousel .carousel-control-next {
+  inset-inline-end: -7%;
+  transition: all 0.5s;
+}
+/* Hover Effect with Scale and Positioning */
+.carousel:hover .carousel-control-prev {
+  inset-inline-start: 5%;
+  transform: scale(1.1);
+}
+.carousel:hover .carousel-control-next {
+  inset-inline-end: 5%;
+  transform: scale(1.1);
+}
+/*------ Carousel Section End -------*/
+
+/*.....................................
+      Responsive Section Start
+.....................................*/
+/* X-Large Devices (Large Desktops, 1200px to <1400px) */
+@media (max-width: 1399.98px) {
+  .carousel .carousel-item .carousel-caption { top: 6%; }
+  .carousel .carousel-control { top: 43%; }
+}
+
+/* Large Devices (Desktops or Laptops, 992px to <1200px) */
+@media (max-width: 1199.98px) {
+  .carousel .carousel-item .carousel-caption { top: 5%; }
+  .carousel .carousel-caption .btn-tp { padding: 10px 24px; }
+  .carousel .carousel-control { width: 70px; height: 70px; }
+}
+
+/* Medium Devices (Laptops or Tablets, 768px to <992px) */
+@media (max-width: 991.98px) {
+  .carousel .carousel-item .carousel-caption { top: 3%; }
+  .carousel .carousel-caption .content h2 { margin-block-end: 3%; }
+  .carousel .carousel-caption .btn-tp { padding: 6px 20px; }
+  .carousel .carousel-control { width: 60px; height: 60px; top: 42%; }
+}
+
+/* Small Devices (Landscape Phones, 576px to <768px) */
+@media (max-width: 767.98px) {
+  .carousel .carousel-caption .content h2 { font-size: clamp(1.5rem, 4vw, 2rem);}
+  .carousel .carousel-caption .btn-tp { display: none; }
+  .carousel .carousel-control { width: 50px; height: 50px; top: 41%; }
+  .carousel-control-prev-icon, .carousel-control-next-icon { width: 25px; height: 25px; }
+}
+
+/* X-Small Devices (Portrait Phones, 480px to <576px) */
+@media (max-width: 575.98px) {
+  .carousel .carousel-item .carousel-caption { top: 0; }
+  .carousel .carousel-caption .content h2 { font-size: clamp(1.25rem, 4vw, 1.5rem);}
+  .carousel .carousel-control { width: 40px; height: 40px; }
+  .carousel-control-prev-icon, .carousel-control-next-icon { width: 20px; height: 20px; }
+  .carousel-indicators [data-bs-target] { width: 20px; }
+}
+
+/* XX-Small Devices (Small Phones, 320px to <480px) */
+@media (max-width: 479.98px) {
+  .carousel .carousel-item .carousel-caption { top: -5%; }
+  .carousel .carousel-caption .content h2 { font-size: clamp(0.8rem, 4vw, 1.2rem);}
+  .carousel .carousel-control { width: 30px; height: 30px; top: 40%; }
+  .carousel-control-prev-icon, .carousel-control-next-icon { width: 16px; height: 16px; }
+  .carousel-indicators [data-bs-target] { width: 15px; }
+}
+
+/* XS-Small Devices (Small Phones, 280px to <320px) */
+@media (max-width: 319.98px) {
+  .carousel .carousel-item .carousel-caption { top: -9%; }
+  .carousel .carousel-control { width: 25px; height: 25px; }
+  .carousel-control-prev-icon, .carousel-control-next-icon { width: 12px; height: 12px; }
+}
+/*..... Responsive Section End ......*/

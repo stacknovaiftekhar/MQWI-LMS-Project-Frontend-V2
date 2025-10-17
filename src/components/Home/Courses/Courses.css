@@ -1,0 +1,58 @@
+/*.....................................
+      07. Courses Section Start
+.....................................*/
+.courses { background: #D5F5E3; }
+
+.courses .card .card-img {
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+}
+.courses .card .card-img img { transition: transform 0.3s; }
+.courses .card:hover .card-img img { transform: scale(1.1); }
+
+.courses .card .card-body {
+  padding: 2rem 1rem;
+  border: 8px solid #EAFAF1;
+  border-top: 0;
+  border-radius: 5px;
+}
+.courses .card .card-body .fee { margin-block: 1rem; }
+
+/*********** Course Detail ***********/
+.course-detail { margin: 5rem 0; }
+.course-detail .links ul li span { color: green; margin-right: 0.4rem; }
+/* ------ Courses Section End ------ */
+
+/************ Enroll Form ************/
+.enroll-form .instructions .item { border-bottom: 2px dashed #777777; }
+.enroll-form .instructions .item:last-child { border-bottom: none }
+
+
+/*.....................................
+      Responsive Section Start
+.....................................*/
+/* X-Large Devices (Large Desktops, 1200px to <1400px) */
+@media (max-width: 1399.98px) {
+  .courses .card .card-title { font-size: 1.2rem; }
+}
+
+/* Large Devices (Desktops or Laptops, 992px to <1200px) */
+@media (max-width: 1199.98px) {
+  .courses .card {  margin: 0.5rem; }
+  .courses .card .card-title { font-size: 1.25rem; }
+}
+
+/* Medium Devices (Laptops or Tablets, 768px to <992px) */
+@media (max-width: 991.98px) {
+  .courses .card {  margin: 0.5rem 0; }
+  /* course-detail */
+  .course-detail .course-content { margin-top: 2rem; }
+  .course-detail .links { margin-top: 2rem; }
+}
+
+/* XS-Small Devices (Small Phones, 280px to <320px) */
+@media (max-width: 319.98px) {
+  .courses .card .card-title { font-size: 1.18rem; }
+  .course-detail .course-content h1 { font-size: 1.5rem; }
+}
+/*..... Responsive Section End ......*/

@@ -1,0 +1,74 @@
+/************ Admin Panel ************/
+.admin-panel { display: flex; }
+
+.admin-panel .main-content {
+  flex: 1;
+  margin-left: 180px;
+  padding: 1rem 1.5rem;
+  height: calc(100vh - 90px);
+  overflow-y: auto;
+  transition: margin-left 0.3s ease;
+}
+
+.sidebar.collapsed + .main-content { margin-left: 56px; }
+
+
+/************** Sidebar **************/
+.sidebar {
+  background: #1D8348;
+  color: #FFF;
+  width: 180px;
+  height: calc(100vh - 90px);
+  position: fixed;
+  top: 90px;
+  left: 0;
+  overflow-y: auto;
+  z-index: 8;
+  transition: width 0.3s ease;
+}
+
+.sidebar.collapsed { width: 56px; }
+
+.sidebar .sidebar-header {
+  display: flex;
+  align-items: center;
+  background: #186A3B;
+  font-size: 1.5rem;
+  height: 60px;
+  padding: 8px 16px 16px;
+}
+
+.sidebar-header .toggle-btn {
+  background: none;
+  color: #FFF;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+.sidebar-header .admin-title {
+  font-weight: bold;
+  padding-top: 6px;
+}
+
+.sidebar .menu-list .sidebar-link {
+  display: flex;
+  align-items: center;
+  color: #FFF;
+  padding: 0.65rem 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar .menu-list .sidebar-link:hover {
+  background-color: #E1A95B;
+  color: #333;
+}
+.sidebar .menu-list li.active a {
+  background-color: #DF9F45;
+  color: #333;
+}
+
+.sidebar-link .icon {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
+
+.sidebar.collapsed .menu-text { display: none; }

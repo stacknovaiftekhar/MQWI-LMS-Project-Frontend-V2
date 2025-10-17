@@ -1,0 +1,91 @@
+/************ Users Panel ************/
+.users-panel .navbar {
+  position: sticky;
+  top: 0; z-index: 99;
+}
+
+
+/************** Menubar **************/
+.users-panel .menubar {
+  background: #1D8348;
+  position: sticky;
+  top: 90px; z-index: 80;
+  padding-block: 0;
+}
+
+.users-panel .menubar .user-name { color: #FFF !important; font-weight: 600; }
+  
+.users-panel .menubar .navbar-toggler { border: none; }
+.users-panel .menubar .navbar-toggler:focus { box-shadow: none; }
+
+.users-panel .menubar .menu-list .nav-link { color: #FFF;
+  padding: 0.75rem 1.5rem; transition: all 0.3s; }
+.users-panel .menubar .menu-list .nav-link:hover {
+  background-color: #E1A95B; color: #333; }
+.users-panel .menubar .menu-list .nav-link.active {
+  background-color: #DF9F45; color: #333; }
+
+.users-panel .menubar .menu-list .icon i { margin-right: 0.5rem; }
+
+.users-panel .profile, .users-panel .profile .card, .users-panel .profile li { background: #F2F8F5; }
+
+
+/************ Modules Page ***********/
+/* Modules Aside */
+.modules-page .modules-aside {
+  background: #FFF;
+  overflow: hidden;
+  transition: width .25s;
+  border-right: 1px solid #E9ECEF;
+}
+
+.modules-aside .btn-link {
+  color: #666;
+  padding: 0;
+  text-decoration: none;
+}
+.modules-aside .btn-link:hover { color: #FFC107; }
+.modules-aside .btn-link.active { color: #DE9125; }
+
+/* Video Player */
+.modules-page .video-player {
+  position: relative;
+  overflow: hidden;
+  z-index: 4;
+}
+
+/* Logo Inside Video */
+.modules-page .video-logo {
+  position: absolute;
+  top: 14px; left: 14px;
+  width: 64px; z-index: 5;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+
+/************ Payment Form ***********/
+.payment-form .instructions .item { border-bottom: 2px dashed #777777; }
+.payment-form .instructions .item:last-child { border-bottom: none }
+
+
+/*.....................................
+      Responsive Section Start
+.....................................*/
+/* Medium Devices (Laptops or Tablets, 768px to <992px) */
+@media (max-width: 991.98px) {
+  .users-panel .main-content .profile { padding-inline: 2rem !important;  }
+  .users-panel .menubar .menu-list .nav-link { padding: 0.75rem 1.25rem; }
+}
+
+/* Small Devices (Landscape Phones, 576px to <768px) */
+@media (max-width: 767.98px) {
+  .users-panel .main-content .profile { padding-inline: 1.5rem !important; }
+}
+
+/* X-Small Devices (Portrait Phones, 480px to <576px) */
+@media (max-width: 575.98px) {
+  .users-panel .main-content .profile { padding-inline: 1rem !important; }
+  .users-panel .main-content .profile .part-two li { font-size: 14.65px; }
+}
+/*..... Responsive Section End ......*/

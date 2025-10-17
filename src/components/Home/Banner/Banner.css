@@ -1,0 +1,108 @@
+/*.....................................
+      03. Banner Section Start
+.....................................*/
+#banner { scroll-margin-top: 150px; }
+
+.banner { background: #D5F5E3; }
+
+.banner .content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+.banner .content h2 {
+  color: #1D8348;
+  margin-bottom: 1rem;
+}
+.banner .content p { font-size: 18px; }
+.banner .content p:last-child { margin-bottom: 0; }
+
+/* banner contact */
+.banner .contact figure {
+  position: relative;
+  margin: 0;
+}
+/* Background Overlay */
+.banner .contact figure::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 145, 70, 0.85);
+}
+.banner .contact figure .details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+.banner .contact figure .details h5 {
+  color: #FFF;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.banner .contact figure .details h2 {
+  color: #FFF;
+  margin-top: 24px;
+  font-weight: bold;
+}
+.banner .contact figure .details .email {
+  font-size: 1.25rem;
+  color: #FFF;
+  margin-bottom: 24px;
+}
+/* ------ Banner Section End ------- */
+
+/*.....................................
+      Responsive Section Start
+.....................................*/
+/* X-Large Devices (Large Desktops, 1200px to <1400px) */
+@media (max-width: 1399.98px) {
+  .banner .content p { line-height: 1.5; }
+}
+
+/* Large Devices (Desktops or Laptops, 992px to <1200px) */
+@media (max-width: 1199.98px) {
+  .banner .content h2 { font-size: 1.8rem; }
+  .banner .content p { font-size: 17px; line-height: 1.4; }
+}
+
+/* Medium Devices (Laptops or Tablets, 768px to <992px) */
+@media (max-width: 991.98px) {
+  .banner .content h2 { font-size: 1.18rem; margin-bottom: 0.5rem; }
+  .banner .content p { font-size: 1rem; line-height: 1.3; }
+}
+
+/* Small Devices (Landscape Phones, 576px to <768px) */
+@media (max-width: 767.98px) {
+  .banner .content h2 { font-size: 1.7rem; margin: 2.5rem 0 1rem; }
+  .banner .content p { font-size: 18px; line-height: 1.6; }
+  .banner .content p:last-child { margin-bottom: 2rem; }
+}
+
+/* X-Small Devices (Portrait Phones, 480px to <576px) */
+@media (max-width: 575.98px) {
+  .banner .content h2 { font-size: 1.6rem; }
+  .banner .content p { font-size: 17px; line-height: 1.5; }
+}
+
+/* XX-Small Devices (Small Phones, 320px to <480px) */
+@media (max-width: 479.98px) {
+  .banner .content h2 { font-size: 1.4rem; }
+  .banner .content p { font-size: 1rem; line-height: 1.4; }
+  .banner .contact figure .details h5 { font-size: 1rem; }
+  .banner .contact figure .details h2 { font-size: 1.4rem; }
+  .banner .contact figure .details .email { font-size: 1rem; }
+  .banner .contact figure .details .btn-wh { padding: 0.6rem 2.5rem; }
+}
+
+/* XS-Small Devices (Small Phones, 280px to <320px) */
+@media (max-width: 319.98px) {
+  .banner .content h2 { font-size: 1.25rem; }
+  .banner .contact figure .details .email { font-size: 0.9rem; }
+  .banner .contact figure .details .btn-wh { padding: 0.4rem 2rem; }
+}
+/*..... Responsive Section End ......*/
